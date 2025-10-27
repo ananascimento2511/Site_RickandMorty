@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cartões — Rick and Morty Characters</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <h1>Rick & Morty — Personagens</h1>
+    <p class="subtitle">Dados Recolhidos em Tempo Real • Cards dinâmicos</p>
+  </header>
+
+  <main class="container">
+    <section class="controls">
+      <input id="searchInput" type="search" placeholder="Buscar por nome..." />
+      <select id="statusFilter">
+        <option value="">Todos os status</option>
+        <option value="Alive">Alive</option>
+        <option value="Dead">Dead</option>
+        <option value="unknown">unknown</option>
+        <option value="favoritos">Favoritos</option>
+      </select>
+      <button id="btnLoad" class="btn">Carregar</button>
+    </section>
+
+    <section id="cardsContainer" class="cards-grid" aria-live="polite">
+    </section>
+
+    <nav class="pagination" aria-label="Paginação">
+      <button id="prevBtn" class="btn">Anterior</button>
+      <span id="pageInfo">Página 1</span>
+      <button id="nextBtn" class="btn">Próxima</button>
+    </nav>
+
+    <div id="message" class="message" role="status" aria-live="polite"></div>
+  </main>
+
+  <footer class="site-footer">
+    <small>API usada: <a href="https://rickandmortyapi.com/" target="_blank"
+        rel="noopener">rickandmortyapi.com</a></small>
+    <br />
+    <small>Desenvolvido por: <a href="https://github.com/ananascimento2511" target="_blank" rel="noopener">Ana Luiza RA:
+        77929</a></small>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
